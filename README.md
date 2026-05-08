@@ -36,7 +36,7 @@ ___
 | Surface pressure | mb | 
 | Total precipitation | mm | 
 
-### (2) Navigate to the `model` folder. This directory holds all the Pythons scripts and lake model code. 
+### (2) Navigate to the `model` folder. This directory holds all the Python scripts and lake model code. 
 ```
 cd ~/your-directory/model/
 ```
