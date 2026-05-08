@@ -36,17 +36,22 @@ ___
 | Surface pressure | mb | 
 | Total precipitation | mm | 
 
-### (2) Run the `02_create_parameter_sets.py` Python script. This code runs the runoff-isotope module and gets all models ready with parameter sets. 
+### (2) Navigate to the `model` folder. This directory holds all the Pythons scripts and lake model code. 
+```
+cd ~/your-directory/model/
+```
+
+### (3) Run the `02_create_parameter_sets.py` Python script. This code runs the runoff-isotope module and gets all models ready with parameter sets. 
 ```
 python ./02_create_parameter_sets.py
 ```
 > :information_source: Note: You will be asked if you want to generate a new, user-defined number of parameter sets or use an existing .csv file (i.e., the specific parameter sets that resulted in the best model performance against observations). If you are using an existing .csv file of parameter sets, place that file in the `01_set_up_files` folder and enter the file name when prompted.
 
-### (3) Run the `03_run_models.py` Python script. This will run the models and save outputs in the `output` folder. 
+### (4) Run the `03_run_models.py` Python script. This will run the models and save outputs in the `output` folder. 
 ```
 python ./03_run_models.py
 ```
-### (4) (Optional) Run the `04_build_netcdfs.py` Python script to aggregate output .txt files from model runs into netCDF files. This is useful for keeping track of 100s-1000s of outputs in one file. 
+### (5) (Optional) Run the `04_build_netcdfs.py` Python script to aggregate output .txt files from model runs into netCDF files. This is useful for keeping track of 100s-1000s of outputs in one file. 
 ```
 python ./04_build_netcdfs.py
 ```
@@ -57,7 +62,7 @@ Output files are:
   
 * `lake-model-temp.nc`, `lake-model-d2H.nc`, `lake-model-d18O.nc`: Daily average profiles of water temperature, water $\delta$<sup>2</sup>H values, and water&nbsp; $\delta$<sup>18</sup>O values. Column #s are lake layers.
 
-### (5) Calibration
+### (6) Calibration
 In the `calibration` folder, an example Jupyter notebook `example-lake-psm-calibration.ipynb` demonstrates how a user might evaluate model performance against water temperature and water isotope profile observations using root-mean-square error and visualize results with scatterplots, timeseries, and heatmaps. The notebook uses the 5 example model simulations in this repository.
 ___
 
