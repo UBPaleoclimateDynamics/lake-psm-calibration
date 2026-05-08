@@ -9,7 +9,7 @@ The lake model is based on Hostetler & Bartlein (1990), with adaptions from Morr
 ## Highlights:
 * :grey_question: **Uncertain parameters**: Test different model parameter combinations using Latin Hypercube sampling.
   
-* :twisted_rightwards_arrows: **Parallel processing**: Models are run in parallel (default is 5 models run simulaneously), speeding up run times.
+* :twisted_rightwards_arrows: **Parallel processing**: Models are run in parallel (default is 5 models run simultaneously), speeding up run times.
   
 * :droplet: **Simulate water isotopes**: A runoff-isotope module that can be adapted to any lake is integrated into this framework to provide forcings for lake water and isotope balance.
   
