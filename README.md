@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20090051.svg)](https://doi.org/10.5281/zenodo.20090051)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20124941.svg)](https://doi.org/10.5281/zenodo.20124941)
 
 # Lake proxy system model calibration framework <br> (PRYSM v2.0)
 
